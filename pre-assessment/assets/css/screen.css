@@ -1,0 +1,121 @@
+* { /* Sets the margin and padding for all elements in the document*/
+	margin: 0px;
+	padding: 0px;
+}
+
+img{
+    max-width:100%;
+}
+
+html{
+}
+
+body {
+	text-align: center;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	background-color: #171717;
+	font-size: 16px;
+	line-height: 1.5em;
+	background-image: url("../img/bg-tile.jpg");
+	background-repeat: repeat-x;
+}
+#container {
+	max-width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+	background-color: #FFF;
+	margin-top: 20px;
+	border: 1px solid #CCC;
+}
+
+#header {
+	background-image: url("../img/masthead.webp");
+	background-repeat: repeat-x;
+	height: 140px;
+}
+
+#header h1 a {
+	height: 140px;
+	display: block;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+#nav {
+	background-color: #000;
+}
+#nav ul {
+	list-style-type: none;
+	margin-left: 10px;
+}
+#nav ul li {
+	display: inline;
+	height: 35px;
+	line-height: 35px;
+}
+#nav ul li a {
+	display: inline-block;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-size: 18px;
+}
+#nav ul li a:link, #nav ul li a:visited {
+	text-decoration: none;
+	border-bottom-width: 4px;
+	border-bottom-style: solid;
+	border-bottom-color: #000;
+	color: #FFF;
+}
+#nav ul li a:hover {
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+}
+#content {
+	margin: 20px;
+}
+#content p {
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+
+#content h2{
+	color: yellow;
+}
+
+#content h3{
+	color: aquamarine;
+}
+
+#content h4{
+	color: rgb(255, 145, 0);
+}
+
+#content a:hover{
+	background-color: gray;
+}
+
+#content img{
+	display: inline;
+	border: 2px solid black;
+	margin: 20px;
+	float: right;
+}
+
+.alert{
+	background-color: red;
+	color: white;
+}
+
+#footer {
+	background-color: #000;
+	color: #FFF;
+	height: 25px;
+}
+#footer h6 {
+	font-size: 12px;
+	line-height: 25px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
