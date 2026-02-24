@@ -1,0 +1,59 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*Base CSS*/
+body {
+  font-family: "Tomorrow";
+  background: #FBFFA1;
+  overflow: auto;
+}
+
+div.row {
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:20px;
+}
+
+.assignment {
+  border-radius: 3px;
+  background-color: #90EE90;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.assignment > h2{
+  text-decoration: none;
+}
+
+/* Queries */
+
+/* Max Width Query */
+@media screen and (max-width: 600px){
+    body{
+        background-color: gold;
+    }
+    div.row{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Dark/Light Mode Query */
+/* @media screen and (prefers-color-scheme: dark){
+    body{
+        background-color: #ffd58b;
+    }
+} */
+
+/* Min Width Query */
+@media screen and (min-width: 2000px){
+    body{
+        background-color: red;
+    }
+}
