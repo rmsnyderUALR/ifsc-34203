@@ -1,8 +1,5 @@
-/* apply a natural box layout model to all elements, but allowing components to change 
+/* mobile first approach*/
 
-http://www.paulirish.com/2012/box-sizing-border-box-ftw/
-
-*/
 html {
   box-sizing: border-box;
 }
@@ -21,7 +18,7 @@ body {
 
 div.row {
   display:grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: 1fr;
   gap:20px;
 }
 
@@ -41,21 +38,28 @@ div.row {
 }
 
 /* Max Width Query */
-@media screen and (max-width: 600px){
+@media screen and (min-width: 768px){
   
   div.row{
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   
 }
 
-/* Ranged Query */
+@media screen and (min-width: 992px){
+  div.row{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/*
+/* Ranged Query 
 @media screen and (max-width: 800px) and (min-width: 601px){
     
     div.row{
         grid-template-columns: 1fr 1fr;
     }
-}
+} */
 
 /* Min Width Query */
 @media screen and (min-width: 801px){
