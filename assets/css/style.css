@@ -1,3 +1,11 @@
+/* CSS Custom Properties */
+
+:root{
+  --default-spacing: 20px;
+  --main-bg-color: #FBFFA1;
+  --assignment-color: #90EE90;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -10,26 +18,27 @@ html {
 /*Base CSS*/
 body {
   font-family: "Tomorrow";
-  background: #FBFFA1;
+  background: var(--main-bg-color);
   overflow: auto;
 }
 
 div.row {
-  display:grid;
+  display: grid;
   grid-template-columns: repeat(4,1fr);
-  gap:20px;
+  gap: var(--default-spacing);
 }
 
 .assignment {
   border-radius: 3px;
-  background-color: #90EE90;
-  padding: 20px;
-  border-radius: 20px;
+  background-color: var(--assignment-color);
+  padding: var(--default-spacing);
+  border-radius: var(--default-spacing);
   text-align: center;
-}
+  align-content: center;
 
-.assignment > h2{
-  text-decoration: none;
+  > h2{
+    text-decoration: none;
+  }
 }
 
 /* Queries */
