@@ -142,8 +142,6 @@ dd {
   margin-right: 20px;
 }
 
-#skills {
-}
 #skills li {
   list-style-type: square;
 }
@@ -220,8 +218,7 @@ main.container > * {
   header.container {
     max-width: 900px;
   }
-  .page-title {
-  }
+ 
   #skills {
     padding-left: calc(30% + 40px);
   }
