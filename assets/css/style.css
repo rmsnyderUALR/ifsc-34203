@@ -22,7 +22,7 @@ body {
   overflow: auto;
 }
 
-div.row {
+div.container {
   display: grid;
   grid-template-columns: repeat(4,1fr);
   gap: var(--default-spacing);
