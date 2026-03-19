@@ -1,7 +1,7 @@
 /* CSS Custom Properties */
 
 :root{
-  --main-bg-color: #D9BD96;
+  --main-bg-color: #F0EAD6;
   --primary-type-color: #261704;
   --accent-color-1: #2B587B;
 }
@@ -125,10 +125,10 @@ main {
 
 
 dl {
-  font-size:.8rem;
+  font-size: 1rem;
   display: grid;
   /*shorthand*/
-  grid-template: repeat(8, 50px) / 8em 1fr;
+  grid-template: repeat(8, auto) / 8em 1fr;
 }
 
 dt {
@@ -261,6 +261,46 @@ main.container {
   }
 
   .bio{
+    grid-area: bio;
+  }
+
+  .details{
+    grid-area: details;
+  }
+
+  .related-links{
+    grid-area:related;
+    border-bottom:1px solid var(--accent-color-1);
+    padding-bottom:50px;
+  }
+}
+
+@media screen and (min-width: 992px){
+  header.container{
+    max-width:1200px;
+  }
+
+    main.container{
+    max-width:1200px;
+    grid-template-columns: 36.5% auto;  
+    grid-template-areas:
+      "title title"
+      "about about"
+      "skills experience"
+      ". education"
+      ;  
+  }
+
+    #about{
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 300px 1fr auto;
+    grid-template-areas:
+      "bio details details"
+      "related related related";
+  }
+
+    .bio{
     grid-area: bio;
   }
 
