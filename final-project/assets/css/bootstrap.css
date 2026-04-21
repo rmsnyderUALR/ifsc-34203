@@ -1,0 +1,28 @@
+:root{
+  --default-spacing: ;
+  --main-bg-color: ;
+  --assignment-color: ;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+img{
+    max-width:100%;
+}
+
+.carousel-inner, .item, img {
+    height:360px;
+    object-fit: contain;
+}
+
+.slide{
+    margin: auto;
+}
+
