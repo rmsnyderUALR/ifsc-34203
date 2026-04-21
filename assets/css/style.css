@@ -22,10 +22,23 @@ body {
   overflow: auto;
 }
 
+header{
+  max-width: 60%;
+  margin: auto;
+  text-align: center;
+  nav{
+    li{
+      list-style-type: none;
+    }
+  }
+}
+
 div.container {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: 1fr;
   gap: var(--default-spacing);
+  max-width: 60%;
+  margin: auto;
 }
 
 .assignment {
@@ -43,26 +56,18 @@ div.container {
 
 /* Queries */
 
-/* Max Width Query */
-@media screen and (max-width: 600px){
-    body{
-        background-color: gold;
-    }
-    div.row{
-        grid-template-columns: 1fr;
+/* Min Width Query for Tablet breakpoint*/
+@media screen and (min-width: 768px){
+    div.container{
+        grid-template-columns: 1fr 1fr;
+        max-width: 70%;
     }
 }
 
-/* Dark/Light Mode Query */
-/* @media screen and (prefers-color-scheme: dark){
-    body{
-        background-color: #ffd58b;
-    }
-} */
-
-/* Min Width Query */
-@media screen and (min-width: 2000px){
-    body{
-        background-color: red;
+/* Min Width Query for Desktop breakpoint*/
+@media screen and (min-width: 992px){
+    div.container{
+      grid-template-columns: repeat(4, 1fr);
+      max-width: 90%;
     }
 }
