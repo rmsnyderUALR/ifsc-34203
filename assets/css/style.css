@@ -2,8 +2,9 @@
 
 :root{
   --default-spacing: 20px;
-  --main-bg-color: #865959;
+  --main-bg-color: #614040;
   --assignment-color: #acabab;
+  --assignment-text: #382424;
 }
 
 html {
@@ -13,6 +14,16 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+/* Screen Reader only */
+.sr-only {
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
 }
 
 /*Base CSS*/
@@ -33,12 +44,14 @@ header{
   }
 }
 
-div.container {
+
+section.container {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--default-spacing);
   max-width: 60%;
   margin: auto;
+  font-size: 0.8rem;
 }
 
 .assignment {
@@ -49,8 +62,22 @@ div.container {
   text-align: center;
   align-content: center;
 
-  > h2{
-    text-decoration: none;
+  a{
+      text-decoration: none;
+      color: var(--assignment-text);
+      &:hover{
+        color: #f1c9c9;
+      }
+    }
+  h2{
+    color: var(--assignment-text);
+  }
+  ul{
+    padding: 0;
+    text-align: center;
+    li{
+      list-style-type: none;
+    }
   }
 }
 
@@ -58,16 +85,16 @@ div.container {
 
 /* Min Width Query for Tablet breakpoint*/
 @media screen and (min-width: 768px){
-    div.container{
+    section.container{
         grid-template-columns: 1fr 1fr;
-        max-width: 70%;
+        max-width: 50%;
     }
 }
 
 /* Min Width Query for Desktop breakpoint*/
 @media screen and (min-width: 992px){
-    div.container{
+    section.container{
       grid-template-columns: repeat(4, 1fr);
-      max-width: 90%;
+      max-width: 60%;
     }
 }

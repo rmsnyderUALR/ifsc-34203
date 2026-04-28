@@ -26,3 +26,86 @@ img {
 .slide{
     margin: auto;
 }
+
+body{
+    margin: 0;
+}
+
+main{
+    background-color: #f1f1f1;
+}
+
+header.primary{
+    overflow: hidden;
+    background-color: #fff;
+    padding: 0px 6vw 0px 10vw;
+    a{
+        float: left;
+        img{
+            height: 8vw;
+        }
+    }
+}
+
+#headerList{
+    float: right;
+    padding: 0;
+    margin-top: 4%;
+    margin-right: 4%;
+    font-size: 1.4rem;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    a{
+        text-decoration: none;
+    }
+}
+
+#navbar{
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        list-style-type: none;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+
+#carousel{
+    .fade div img{
+        margin: auto;
+        height: 30vw;
+        object-fit: contain;
+    }
+}
+
+#content{
+    h2{
+        margin-top: 0;
+        text-align: center;
+    }
+    #products{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
+
+/* Queries */
+
+/* Min Width Query for Tablet breakpoint*/
+@media screen and (min-width: 768px){
+    #products{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Min Width Query for Desktop breakpoint*/
+@media screen and (min-width: 992px){
+    #products{
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+}
