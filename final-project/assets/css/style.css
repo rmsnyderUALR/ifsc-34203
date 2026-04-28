@@ -1,0 +1,28 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* ------------Responsive Image -------------- */
+img{
+    max-width: 100%;
+}
+/* ------------Utility Classes -------------- */
+
+.container{
+    margin: auto;
+    padding: 40px;
+    max-width: 80%;
+}
+
+/* ------------Style Classes -------------- */
+img {
+    height:360px;
+    object-fit: contain;
+}
+
+.slide{
+    margin: auto;
+}
