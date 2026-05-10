@@ -91,6 +91,12 @@ header.primary{
         display: grid;
         grid-template-columns: 1fr;
         justify-items: center;
+        figure{
+            margin: 0;
+            figcaption{
+                text-align: center;
+            }
+        }
     }
 }
 
@@ -98,14 +104,18 @@ header.primary{
 
 /* Min Width Query for Tablet breakpoint*/
 @media screen and (min-width: 768px){
-    #products{
+    #content #products{
+        display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 40px;
     }
 }
 
 /* Min Width Query for Desktop breakpoint*/
 @media screen and (min-width: 992px){
-    #products{
-      grid-template-columns: 1fr 1fr 1fr;
+    #content #products{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
     }
 }
