@@ -29,6 +29,7 @@ img {
 
 body{
     margin: 0;
+    font-family: "Gelasio", monospace;
 }
 
 main{
@@ -63,6 +64,8 @@ header.primary{
 }
 
 #navbar{
+    border-bottom: solid 1px #cfcfcf;
+    border-top: solid 1px #cfcfcf;
     ul{
         display: flex;
         flex-direction: row;
@@ -75,10 +78,14 @@ header.primary{
 }
 
 #carousel{
-    .fade div img{
-        margin: auto;
-        height: 30vw;
-        object-fit: contain;
+    .fade div {
+        margin: 0;
+        img{
+            margin: auto;
+            margin-top: 20px;
+            height: 30vw;
+            object-fit: contain;
+        }
     }
 }
 
@@ -98,6 +105,10 @@ header.primary{
             }
         }
     }
+}
+
+#about{
+    display: grid;
 }
 
 /* Queries */
